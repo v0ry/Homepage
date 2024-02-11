@@ -15,3 +15,16 @@ body {
 .header h1 {
   margin: 15px;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
