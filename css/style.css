@@ -1,30 +1,53 @@
 body {
-  background-color: #f4f4f4;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
+  margin: 60px;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  padding: 16px 32px 16px 16px; /* top right bottom left */
+  margin: 0px 0px 16px 0px; /* top right bottom left */
+  flex: 1 1 20%; /* Grow, shrink, basis */
+}
+
+.header div {
+  display: flex;
+  flex-flow: row wrap; /* Adjusted to ensure horizontal layout */
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none; /* Remove bullet points */
+  opacity: 0.7;
+  gap: 16px;
   padding: 0;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: lightgray;
-}
-
-.header h1 {
-  margin: 15px;
+  font-size: 14px;
 }
 
 .main {
+  min-height  : 100vh; /* Flexbox to ensure footer always at bottom!*/ 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex: 2 1 80%; /* Grow, shrink, basis */
+  padding: 0px 0px 16px 0px;
+  margin: 0px 16px 16px 16px; /* top right bottom left */
+  justify-content: flex-start;
 }
 
-.footer {
-  margin: 20px;
+footer {
+  color: rgb(216, 222, 233);
   display: flex;
-  justify-content: space-between;
+  margin-top: auto;
+  justify-content: center;
+  font-size: 12px;
 }
