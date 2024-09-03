@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Konstantin Krasser</title>
+	<atom:link href="https://konstantinkrasser.com/index.php/feed/" rel="self" type="application/rss+xml" />
+	<link>https://konstantinkrasser.com</link>
+	<description></description>
+	<lastBuildDate>Tue, 03 Sep 2024 22:48:09 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
+	<item>
+		<title>This is a testpost</title>
+		<link>https://konstantinkrasser.com/index.php/2024/09/03/this-is-a-testpost/</link>
+					<comments>https://konstantinkrasser.com/index.php/2024/09/03/this-is-a-testpost/#respond</comments>
+		
+		<dc:creator><![CDATA[konstantin]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2024 22:48:09 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://konstantinkrasser.com/?p=10</guid>
+
+					<description><![CDATA[asdfasdfjkasdjflas asdfjalsdfja asdflkalskdf]]></description>
+										<content:encoded><![CDATA[
+<p>asdfasdfjkasdjflas</p>
+
+
+
+<p>asdfjalsdfja</p>
+
+
+
+<p>asdflkalskdf</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://konstantinkrasser.com/index.php/2024/09/03/this-is-a-testpost/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Example title of my first WP</title>
+		<link>https://konstantinkrasser.com/index.php/2024/09/03/example-title-of-my-first-wp/</link>
+					<comments>https://konstantinkrasser.com/index.php/2024/09/03/example-title-of-my-first-wp/#respond</comments>
+		
+		<dc:creator><![CDATA[konstantin]]></dc:creator>
+		<pubDate>Tue, 03 Sep 2024 22:46:37 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://konstantinkrasser.com/?p=8</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+					<wfw:commentRss>https://konstantinkrasser.com/index.php/2024/09/03/example-title-of-my-first-wp/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hello world!</title>
+		<link>https://konstantinkrasser.com/index.php/2024/09/02/hello-world/</link>
+					<comments>https://konstantinkrasser.com/index.php/2024/09/02/hello-world/#comments</comments>
+		
+		<dc:creator><![CDATA[konstantin]]></dc:creator>
+		<pubDate>Mon, 02 Sep 2024 15:40:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://konstantinkrasser.com/?p=1</guid>
+
+					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
+										<content:encoded><![CDATA[
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://konstantinkrasser.com/index.php/2024/09/02/hello-world/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
