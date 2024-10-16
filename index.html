@@ -1,115 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Konstantin Krasser</title>
-  <link href="css/style.css" rel="stylesheet">
-  <style>
-    /* Reset some basic styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-    }
-
-    .header {
-      text-align: left;
-      margin-bottom: 20px;
-    }
-
-    .aboutMe p {
-      margin: 0.5em 0;
-    }
-
-    .header ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .menue ul li a {
-      text-decoration: none;
-      color: #000;
-    }
-    
-    .menue {
-        display: flex;
-        justify-content: center;
-        gap: 15px; 
-    }
-
-    .main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      background: #f1f1f1;
-    }
-
-    /* Mobile first styles */
-    @media (min-width: 600px) {
-      .container {
-        padding: 40px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Krasser</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="aboutMe">
-        <p style="font-weight: 700; margin-right: 5px;">Konstantin Krasser </p>
-        <p><em>CS student located in Graz</em></p>
-    </header>
-      <div>
-      </div>
-    <h="menue">
-        <div>
-            <ul>
-              <li><a href="blog/index.html">📝 Articles</a></li>
-              <li><a href="Fitness/">⛓️ Fitness</a></li>
-              <li><a href="Books/">📚 Books</a></li>
-            </ul>
-          </div>
-        </menue>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h1 class="name">Konstantin Krasser</h1>
+            <!-- Uncomment the description if needed -->
+            <!-- <p class="description">Mathematics PhD student at KU Leuven. Interested in mathematics, software development, Vim, Unix, design.</p> -->
+            <nav class="nav-menu">
+                <ul style="list-style-type: none;">
+                    <li><a href="blog/index.html">📝 Articles</a></li>
+                    <li><a href="Fitness/">⛓️ Fitness</a></li>
+                    <li><a href="Books/">📚 Books</a></li>
+                    <!-- Additional links can be added here -->
+                </ul>
+            </nav>
+            <!-- Social links can be added here if needed -->
+            <!--
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="nofollow noopener noreferrer">Github</a>
+                <a href="mailto:youremail@example.com" target="_blank" rel="nofollow noopener noreferrer">@</a>
+            </div>
+            -->
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="recent-articles">
+                <h2>Recent Articles</h2>
+                <ul>
+                    <li>
+                        <a href="/post/research-workflow/">
+                            <!-- Article meta can be added here if needed -->
+                            <!-- <div class="article-meta">
+                                <span class="date">Date</span> • <span class="read-time">X min read</span>
+                            </div> -->
+                            <h3>Setup MacOS for CON</h3>
+                            <p>CON requires a virtual machine that does not run on macOS Arm64. Here is the solution.</p>
+                        </a>
+                    </li>
+                    <!-- Add more articles here -->
+                </ul>
+            </section>
+        </main>
     </div>
-    <main class="main">
-      <section class="hero">
-        <h2>Recent Articles</h2>
-        <ul>
-          <!--<li><a href="blog/article1.html">Why Quantity is more important than Quallity</a></li>-->
-          <li><a href="blog/CON.html">How To SetUP MacOS For Con</a></li>
-        </ul>
-      </section>
-    </main>
-  </div>
-  <footer> 
-    <p>© 2024 Konstantin Krasser</p>
-  </footer>
+
+    <!-- Footer -->
 </body>
 </html>
-

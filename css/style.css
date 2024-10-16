@@ -1,53 +1,148 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 60px;
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 - 300)));
-  box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #3a343a;
+    font-size: 18px;
 }
 
+/* Container Flexbox */
 .container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    min-height: 100vh;
 }
 
-.header {
-  padding: 16px 32px 16px 16px; /* top right bottom left */
-  margin: 0px 0px 16px 0px; /* top right bottom left */
-  flex: 1 1 20%; /* Grow, shrink, basis */
+/* Sidebar Styling */
+.sidebar {
+    flex: 0 0 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
 }
 
-.header div {
-  display: flex;
-  flex-flow: row wrap; /* Adjusted to ensure horizontal layout */
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-.header ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  list-style-type: none; /* Remove bullet points */
-  opacity: 0.7;
-  gap: 16px;
-  padding: 0;
+/* Navigation Menu Styling */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
 }
 
-.header {
-  font-size: 14px;
+.nav-menu li {
+    margin: 15px 0;
 }
 
-.main {
-  min-height  : 100vh; /* Flexbox to ensure footer always at bottom!*/ 
-  display: flex;
-  flex: 2 1 80%; /* Grow, shrink, basis */
-  padding: 0px 0px 16px 0px;
-  margin: 0px 16px 16px 16px; /* top right bottom left */
-  justify-content: flex-start;
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    transition: color 0.3s;
 }
 
+.nav-menu a:hover,
+.nav-menu a.active {
+    color: #007BFF;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.recent-articles {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recent-articles h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recent-articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-articles li {
+    margin-bottom: 30px;
+}
+
+.recent-articles a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: background-color 0.3s;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.recent-articles a:hover {
+    background-color: #f9f9f9;
+}
+
+.recent-articles h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recent-articles p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer Styling */
 footer {
-  color: rgb(216, 222, 233);
-  display: flex;
-  margin-top: auto;
-  justify-content: center;
-  font-size: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    /* Ensures footer is always at the bottom */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    footer {
+        position: static;
+    }
 }
