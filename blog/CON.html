@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Setup Guide for MacOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h2 {
+            color: #007acc;
+        }
+        code, pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+            display: block;
+            overflow-x: auto;
+        }
+        ol, li {
+            margin-left: 20px;
+        }
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Set Up CON on macOS</h2>
+
+    <pre><code># Install dependencies
+brew install yosys ghdl gtkwave icarus-verilog
+
+# Get sv2v
+git clone https://github.com/zachjs/sv2v.git
+cd sv2v
+make
+
+# Check installation
+sv2v --version
+yosys --version
+
+brew install icarus-verilog
+    </code></pre>
+
+    <h2>Using GTKWave on macOS</h2>
+    <pre><code>git clone git@github.com:gtkwave/gtkwave.git
+cd gtkwave
+    </code></pre>
+
+    <pre><code>brew install desktop-file-utils shared-mime-info \
+gobject-introspection gtk-mac-integration \
+meson ninja pkg-config gtk+3 gtk4
+    </code></pre>
+
+    <pre><code>mkdir build
+cd build
+    </code></pre>
+
+    <pre><code>meson setup . ..
+    </code></pre>
+
+    <pre><code>ninja
+    </code></pre>
+
+    <pre><code>sudo ninja install
+    </code></pre>
+
+    <pre><code>gtkwave
+    </code></pre>
+
+    <pre><code># Clean up
+ninja clean
+cd ..
+rm -rf build
+    </code></pre>
+To Build Run:
+    <code>sv2v  YOURFILENAME.sv -w YOURFILENAME.v</code>
+To Use GTKWave Run:
+<div class="gif-container">
+    <img src="../../img/consystemverilog.gif" alt="CON SystemVerilog GIF">
+</div>>
+</body>
+</html>
